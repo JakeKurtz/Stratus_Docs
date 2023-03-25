@@ -6,4 +6,23 @@ This page is currently under construction.
 
 ## Issues
 
+### Crashing
+
+#### Timeout Detection and Recovery (TDR)
+
+If Blender crashes after using **Stratus** it could be becuase the GPU driver is crashing due to **Windows TDR**:
+
+> "If the operating system does not receive a response from a graphics card within a certain amount of time (default is 2 seconds) the operating system resets the graphics card."
+
+When the GPU driver is killed, the application using it (Blender) crashes aswell. To alleviate this issue, you can follow the instructions at the following links:
+
+- [Adobe: GPU drivers crash with long computations](https://substance3d.adobe.com/documentation/spdoc/gpu-drivers-crash-with-long-computations-tdr-crash-128745489.html)
+
+- [Nvidia: Timeout Detection & Recovery (TDR)](https://docs.nvidia.com/gameworks/content/developertools/desktop/timeout_detection_recovery.htm)
+
 ## Limitations
+
+### Viewport Bugs
+
+Any geometry modification that's done in **Cycles**, such as **displacments**, is...
+Volumetric...

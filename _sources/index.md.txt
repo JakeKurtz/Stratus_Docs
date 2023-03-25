@@ -4,7 +4,6 @@
 % contain the root `toctree` directive.
 
 # Stratus Documentation
-
 ![alt text](../candy.png)
 
 %```{include} ../../README.md
@@ -24,11 +23,11 @@ This page is currently under construction.
 :maxdepth: 1
 
 install
+render
 cloud
 atmo
 sun
 moon
-render
 help
 
 ```

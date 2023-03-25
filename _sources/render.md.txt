@@ -1,55 +1,89 @@
-# Rendering/Baking
+# Usage
 
 ```{note}
 This page is currently under construction.
 ```
 
-## General
+## Viewport Editor
+
+```{warning}
+If the **Viewport Editor** is enabled and you make any changes to the Stratus menus, the HDRI that was baked will be **overwritten** with the viewport render settings.
+```
+
+Messing around with a bunch of parameters, without seeing how it affects your sky, is a miserable way to work. The viewport editor is a powerful feature that allows users to create and edit skies easily and efficiently. Real-time feedback gives you the power to quickly generate a variety of sky backgrounds that meet your needs.
+
+![alt text](../gifs/render/viewport_editor_1.gif)
+
+### Getting Started
+
+Navigate to the **Stratus** tab in the 3D viewport. In **Render Settings** under **Viewport**, click **Start Viewport Editor**.
+
+![alt text](../gifs/render/start_viewport.png)
+
+Ensure that **Show Overlays** is enabled.
+
+![alt text](../gifs/render/show_overlay.png)
+
+To stop the **Viewport Editor**, press the **ESC** key.
+
+## Bake
+
+Bakes the HDRI image using the **Render** settings. The HDRI will be saved in Blenders images as **STRATUS_ENV_TEX**
+
+## Render Animation
+
+```{warning}
+**Render Animation** will freeze Blender until the job is done.
+```
+
+If you want to animate the Stratus HDRI, you **must use** this operator to render your animation. Due to how Stratus was built and how Blender works, you **cannot** use Blender's **Render > Render Animation**. 
+
+The only limitation is that **Blender will be unresponsive** when rendering, and you cannot use video output formats such as **AVI JPEG, AVI Raw, or FFmpeg Video**.
+
+## General Render Settings
 
 ### Environment Image Strength
 
 ### Environment Texture Size
-(1024 x 512) * size
+
+Determines the **resolution** of the HDRI image. The option will be a multiple of **1024 x 512** pixels. i.e.
+
+    (1024 x 512) * size
 
 ### Max Steps
-Maximum number of steps before giving up.
+
+Controls the maximum number of steps, when marching through the cloud layers. The more steps, the prettier the clouds will look, but the longer the render will take.
 
 ![alt text](../gifs/render/steps.gif)
 
 ### Max Light Steps
-Maximum number of steps before giving up.
+
+Controls the maximum number of steps, when marching towards a light source. The more steps, the prettier the clouds will look, but the longer the render will take.
 
 ![alt text](../gifs/render/light_steps.gif)
 
-## Viewport
-
-### Start Viewport Editor
-
-### Pixel Size
-Pixel size for viewport rendering.
-
-| 1x | 2x |
-| :-: | :-: |
-| ![alt text](../gifs/render/ps_1.png) | ![alt text](../gifs/render/ps_2.png) | 
-
-| 4x | 8x |
-| :-: | :-: |
-| ![alt text](../gifs/render/ps_4.png) | ![alt text](../gifs/render/ps_8.png) |
-
-## Render
-### Bake
-### Render Animation
-
-### Environment Texture Size
-(1024 x 512) * size
-
 ### Use Tiling
+
 Render high resolution images in tiles to reduce memory usage, using the specified tile size.
-### Tile Size
+
+#### Tile Size
 
 ### Use Bicubic Sampling
-Preserves fine details when magnifying textures. Requires 8x more samples than bilinear sampling.
+
+```{note}
+Requires 8x more samples than bilinear sampling (default). This can double the render time!
+```
+
+Bicubic sampling is a way to preserve the fine details when magnifying textures. It does this by using some fancy math to estimate the value of unknown pixels based on a larger area of known pixels. The result is a smoother and more accurate image. This should be used to avoid bicubic sampling artifacts.
 
 | Bicubic sampling off | Bicubic sampling on |
 | :-: | :-: |
 | ![alt text](../gifs/render/bicubic_off.png) | ![alt text](../gifs/render/bicubic_on.png) | 
+
+```{tip}
+Since bicubic sampling is very **expensive**, it's best to avoid unless absolutely needed. Blinear artifacts will generally show up when using the **cirro cloud layer**. 
+```
+
+### Pixel Size
+
+Similar to Cycles, you can alter the pixel size for the viewport rendering. This can greatly speed up render times.
