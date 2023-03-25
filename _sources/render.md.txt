@@ -1,0 +1,55 @@
+# Rendering/Baking
+
+```{note}
+This page is currently under construction.
+```
+
+## General
+
+### Environment Image Strength
+
+### Environment Texture Size
+(1024 x 512) * size
+
+### Max Steps
+Maximum number of steps before giving up.
+
+![alt text](../gifs/render/steps.gif)
+
+### Max Light Steps
+Maximum number of steps before giving up.
+
+![alt text](../gifs/render/light_steps.gif)
+
+## Viewport
+
+### Start Viewport Editor
+
+### Pixel Size
+Pixel size for viewport rendering.
+
+| 1x | 2x |
+| :-: | :-: |
+| ![alt text](../gifs/render/ps_1.png) | ![alt text](../gifs/render/ps_2.png) | 
+
+| 4x | 8x |
+| :-: | :-: |
+| ![alt text](../gifs/render/ps_4.png) | ![alt text](../gifs/render/ps_8.png) |
+
+## Render
+### Bake
+### Render Animation
+
+### Environment Texture Size
+(1024 x 512) * size
+
+### Use Tiling
+Render high resolution images in tiles to reduce memory usage, using the specified tile size.
+### Tile Size
+
+### Use Bicubic Sampling
+Preserves fine details when magnifying textures. Requires 8x more samples than bilinear sampling.
+
+| Bicubic sampling off | Bicubic sampling on |
+| :-: | :-: |
+| ![alt text](../gifs/render/bicubic_off.png) | ![alt text](../gifs/render/bicubic_on.png) | 
