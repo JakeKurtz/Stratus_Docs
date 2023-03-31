@@ -1,9 +1,5 @@
 # Moon
 
-```{note}
-This page is currently under construction.
-```
-
 ## Lighting
 
 ### Size
@@ -12,10 +8,16 @@ Size of Moon.
 ![alt text](../gifs/moon/moon_size.gif)
 
 ### Light Source
-Enable the Moon as a light source.
+Enables the Moon as a light source for both the atmosphere and cloud layers.
+
+```{tip}
+Since the Sun is astronomically brighter than the moon, having both as light sources can be a waste of computation. Try it on and off, and see if it makes a difference to your scene.
+```
 
 ### Intensity
 Strength of Moon disk.
+
+![alt text](../gifs/moon/intensity.gif)
 
 ### Ambient Intensity
 Strength of Moon ambient light.

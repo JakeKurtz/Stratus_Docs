@@ -1,8 +1,10 @@
 # Installation
 
-```{note}
-This page is currently under construction.
-```
-
 ## Installing Stratus
 
+- Open up preferences: **Edit > Preferences**
+- Under the addon tab, click **Install...**
+- Navigate to the location where **Stratus.zip** was installed, and **double click** it
+- Enable Stratus by clicking the empty check box
+
+🎉 **Stratus is now installed!** 🎉
