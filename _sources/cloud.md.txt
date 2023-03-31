@@ -1,20 +1,6 @@
 # Clouds
 
-## Lighting
-
-### Atmospheric Perspective Intensity
-The effect the atmosphere has on the appearance of the clouds as viewed from a distance.
-
-![alt text](../gifs/cloud/cld_atmo_per.gif)
-
-### Ambient Light Intensity
-The intensity of ambient light coming from the atmosphere.
-
-![alt text](../gifs/cloud/cld_ambient_int.gif)
-
-### Mie G
-
-## Cirro/Cumulus Layer
+## Basic
 
 ### Rotation
 Cloud layer rotation.
@@ -40,6 +26,25 @@ Height from sea level.
 Cloud layer thickness.
 
 ![alt text](../gifs/cloud/cld_thickness.gif)
+
+## Lighting
+
+### Powder Intensity
+Intensity of the dark edges on clouds, known as the powdered sugar effect.
+
+![alt text](../gifs/cloud/powder.gif)
+
+### Atmospheric Perspective Intensity
+The effect the atmosphere has on the appearance of the clouds as viewed from a distance.
+
+![alt text](../gifs/cloud/cld_atmo_per.gif)
+
+### Ambient Light Intensity
+The intensity of ambient light coming from the atmosphere.
+
+![alt text](../gifs/cloud/cld_ambient_int.gif)
+
+## Noise
 
 ### Coverage Noise Intensity
 Intensity of coverage noise applied to cloud layer.

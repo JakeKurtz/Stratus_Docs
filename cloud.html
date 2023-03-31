@@ -47,18 +47,21 @@
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="render.html">Usage/Rendering</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Clouds</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#lighting">Lighting</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#atmospheric-perspective-intensity">Atmospheric Perspective Intensity</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ambient-light-intensity">Ambient Light Intensity</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mie-g">Mie G</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#cirro-cumulus-layer">Cirro/Cumulus Layer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic">Basic</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#rotation">Rotation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#density">Density</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#size">Size</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#height">Height</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#thickness">Thickness</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#lighting">Lighting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#powder-intensity">Powder Intensity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#atmospheric-perspective-intensity">Atmospheric Perspective Intensity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ambient-light-intensity">Ambient Light Intensity</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#noise">Noise</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#coverage-noise-intensity">Coverage Noise Intensity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#shape-noise-intensity">Shape Noise Intensity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#detail-noise-intensity">Detail Noise Intensity</a></li>
@@ -73,7 +76,7 @@
 <li class="toctree-l1"><a class="reference internal" href="atmo.html">Atmosphere</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sun.html">Sun</a></li>
 <li class="toctree-l1"><a class="reference internal" href="moon.html">Moon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="help.html">Help/FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
 </ul>
 
         </div>
@@ -102,24 +105,8 @@
              
   <section id="clouds">
 <h1>Clouds<a class="headerlink" href="#clouds" title="Permalink to this headline"></a></h1>
-<section id="lighting">
-<h2>Lighting<a class="headerlink" href="#lighting" title="Permalink to this headline"></a></h2>
-<section id="atmospheric-perspective-intensity">
-<h3>Atmospheric Perspective Intensity<a class="headerlink" href="#atmospheric-perspective-intensity" title="Permalink to this headline"></a></h3>
-<p>The effect the atmosphere has on the appearance of the clouds as viewed from a distance.</p>
-<p><img alt="alt text" src="_images/cld_atmo_per.gif" /></p>
-</section>
-<section id="ambient-light-intensity">
-<h3>Ambient Light Intensity<a class="headerlink" href="#ambient-light-intensity" title="Permalink to this headline"></a></h3>
-<p>The intensity of ambient light coming from the atmosphere.</p>
-<p><img alt="alt text" src="_images/cld_ambient_int.gif" /></p>
-</section>
-<section id="mie-g">
-<h3>Mie G<a class="headerlink" href="#mie-g" title="Permalink to this headline"></a></h3>
-</section>
-</section>
-<section id="cirro-cumulus-layer">
-<h2>Cirro/Cumulus Layer<a class="headerlink" href="#cirro-cumulus-layer" title="Permalink to this headline"></a></h2>
+<section id="basic">
+<h2>Basic<a class="headerlink" href="#basic" title="Permalink to this headline"></a></h2>
 <section id="rotation">
 <h3>Rotation<a class="headerlink" href="#rotation" title="Permalink to this headline"></a></h3>
 <p>Cloud layer rotation.</p>
@@ -145,6 +132,27 @@
 <p>Cloud layer thickness.</p>
 <p><img alt="alt text" src="_images/cld_thickness.gif" /></p>
 </section>
+</section>
+<section id="lighting">
+<h2>Lighting<a class="headerlink" href="#lighting" title="Permalink to this headline"></a></h2>
+<section id="powder-intensity">
+<h3>Powder Intensity<a class="headerlink" href="#powder-intensity" title="Permalink to this headline"></a></h3>
+<p>Intensity of the dark edges on clouds, known as the powdered sugar effect.</p>
+<p><img alt="alt text" src="_images/powder.gif" /></p>
+</section>
+<section id="atmospheric-perspective-intensity">
+<h3>Atmospheric Perspective Intensity<a class="headerlink" href="#atmospheric-perspective-intensity" title="Permalink to this headline"></a></h3>
+<p>The effect the atmosphere has on the appearance of the clouds as viewed from a distance.</p>
+<p><img alt="alt text" src="_images/cld_atmo_per.gif" /></p>
+</section>
+<section id="ambient-light-intensity">
+<h3>Ambient Light Intensity<a class="headerlink" href="#ambient-light-intensity" title="Permalink to this headline"></a></h3>
+<p>The intensity of ambient light coming from the atmosphere.</p>
+<p><img alt="alt text" src="_images/cld_ambient_int.gif" /></p>
+</section>
+</section>
+<section id="noise">
+<h2>Noise<a class="headerlink" href="#noise" title="Permalink to this headline"></a></h2>
 <section id="coverage-noise-intensity">
 <h3>Coverage Noise Intensity<a class="headerlink" href="#coverage-noise-intensity" title="Permalink to this headline"></a></h3>
 <p>Intensity of coverage noise applied to cloud layer.</p>
