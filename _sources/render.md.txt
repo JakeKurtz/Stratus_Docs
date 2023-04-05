@@ -1,5 +1,13 @@
 # Usage/Rendering
 
+```{note}
+This page is under construction.
+```
+
+```{note}
+Video tutorial coming very soon! 
+```
+
 ## Viewport Editor
 
 The viewport editor allows you to create and edit skies easily and efficiently. Real-time feedback gives you the power to quickly generate a variety of sky environments that meet your needs.
@@ -8,7 +16,7 @@ The viewport editor allows you to create and edit skies easily and efficiently. 
 
 ### Getting Started
 
-Navigate to the **Stratus** tab in the 3D viewport. In **Render Settings** under **Viewport**, click **Start Viewport Editor**.
+Navigate to the **Stratus** tab in the 3D viewport. In **Rendering** under **Viewport**, click **Start Viewport Editor**.
 
 ![alt text](../gifs/render/start_viewport.png)
 
@@ -18,8 +26,16 @@ Ensure that **Show Overlays** is enabled.
 
 To stop the **Viewport Editor**, press the **ESC** key.
 
-```{warning}
-If the **Viewport Editor** is enabled and you make any changes to the Stratus menus, or change frames, the HDRI that was baked will be **overwritten** with the viewport render settings.
+### Environment Texture Size
+
+This is the size of the environment image that is baked every time a change is made to your sky. It's best to keep the resolution low (1K), since the purpose is to give you real-time feedback, so you can get a good feel for the lighting before commiting to the final bake/render animation.
+
+### Max Steps/Max Light Steps
+
+The steps used when rendering to the viewport. It's best to keep these low enough to maintain real-time feedback.
+
+```{important}
+If the **Viewport Editor** is enabled and you make any changes to the Stratus menus, or change frames, any HDRI that was baked previously will be **overwritten** with the viewport render settings.
 ```
 
 ## Bake
@@ -28,7 +44,7 @@ This operator bakes a single HDRI image of your cloud scene.
 
 ### Getting Started
 
-Navigate to the **Stratus** tab in the 3D viewport. In **Render Settings** under **Render**, click **Bake**.
+Navigate to the **Stratus** tab in the 3D viewport. In **Rendering** under **Render**, click **Bake**.
 
 ![alt text](../gifs/render/bake.png)
 
@@ -44,7 +60,7 @@ The only limitation of the render operator is that **Blender will be unresponsiv
 
 ### Getting Started
 
-Navigate to the **Stratus** tab in the 3D viewport. In **Render Settings** under **Render**, click **Render Animation**.
+Navigate to the **Stratus** tab in the 3D viewport. In **Rendering** under **Render**, click **Render Animation**.
 
 ![alt text](../gifs/render/render.png)
 

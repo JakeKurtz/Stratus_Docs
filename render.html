@@ -48,6 +48,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Usage/Rendering</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#viewport-editor">Viewport Editor</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-texture-size">Environment Texture Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#max-steps-max-light-steps">Max Steps/Max Light Steps</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#bake">Bake</a><ul>
@@ -60,7 +62,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#general-render-settings">General Render Settings</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#environment-image-strength">Environment Image Strength</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#environment-texture-size">Environment Texture Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Environment Texture Size</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#max-steps">Max Steps</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#max-light-steps">Max Light Steps</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tiling">Tiling</a></li>
@@ -74,7 +76,7 @@
 <li class="toctree-l1"><a class="reference internal" href="atmo.html">Atmosphere</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sun.html">Sun</a></li>
 <li class="toctree-l1"><a class="reference internal" href="moon.html">Moon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="help.html">Help/FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
 </ul>
 
         </div>
@@ -103,20 +105,36 @@
              
   <section id="usage-rendering">
 <h1>Usage/Rendering<a class="headerlink" href="#usage-rendering" title="Permalink to this headline"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page is under construction.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Video tutorial coming very soon!</p>
+</div>
 <section id="viewport-editor">
 <h2>Viewport Editor<a class="headerlink" href="#viewport-editor" title="Permalink to this headline"></a></h2>
 <p>The viewport editor allows you to create and edit skies easily and efficiently. Real-time feedback gives you the power to quickly generate a variety of sky environments that meet your needs.</p>
 <p><img alt="alt text" src="_images/viewport_editor_1.gif" /></p>
 <section id="getting-started">
 <h3>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline"></a></h3>
-<p>Navigate to the <strong>Stratus</strong> tab in the 3D viewport. In <strong>Render Settings</strong> under <strong>Viewport</strong>, click <strong>Start Viewport Editor</strong>.</p>
+<p>Navigate to the <strong>Stratus</strong> tab in the 3D viewport. In <strong>Rendering</strong> under <strong>Viewport</strong>, click <strong>Start Viewport Editor</strong>.</p>
 <p><img alt="alt text" src="_images/start_viewport.png" /></p>
 <p>Ensure that <strong>Show Overlays</strong> is enabled.</p>
 <p><img alt="alt text" src="_images/show_overlay.png" /></p>
 <p>To stop the <strong>Viewport Editor</strong>, press the <strong>ESC</strong> key.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If the <strong>Viewport Editor</strong> is enabled and you make any changes to the Stratus menus, or change frames, the HDRI that was baked will be <strong>overwritten</strong> with the viewport render settings.</p>
+</section>
+<section id="environment-texture-size">
+<h3>Environment Texture Size<a class="headerlink" href="#environment-texture-size" title="Permalink to this headline"></a></h3>
+<p>This is the size of the environment image that is baked every time a change is made to your sky. It’s best to keep the resolution low (1K), since the purpose is to give you real-time feedback, so you can get a good feel for the lighting before commiting to the final bake/render animation.</p>
+</section>
+<section id="max-steps-max-light-steps">
+<h3>Max Steps/Max Light Steps<a class="headerlink" href="#max-steps-max-light-steps" title="Permalink to this headline"></a></h3>
+<p>The steps used when rendering to the viewport. It’s best to keep these low enough to maintain real-time feedback.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If the <strong>Viewport Editor</strong> is enabled and you make any changes to the Stratus menus, or change frames, any HDRI that was baked previously will be <strong>overwritten</strong> with the viewport render settings.</p>
 </div>
 </section>
 </section>
@@ -125,7 +143,7 @@
 <p>This operator bakes a single HDRI image of your cloud scene.</p>
 <section id="id1">
 <h3>Getting Started<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h3>
-<p>Navigate to the <strong>Stratus</strong> tab in the 3D viewport. In <strong>Render Settings</strong> under <strong>Render</strong>, click <strong>Bake</strong>.</p>
+<p>Navigate to the <strong>Stratus</strong> tab in the 3D viewport. In <strong>Rendering</strong> under <strong>Render</strong>, click <strong>Bake</strong>.</p>
 <p><img alt="alt text" src="_images/bake.png" /></p>
 <p>The HDRI will be saved in Blenders images as <strong>STRATUS_ENV_TEX</strong>.</p>
 <p>The time taken to bake an image will be in the Blender info window/console.</p>
@@ -137,7 +155,7 @@
 <p>The only limitation of the render operator is that <strong>Blender will be unresponsive</strong> when rendering, and you cannot use video output formats such as <strong>AVI JPEG, AVI Raw, or FFmpeg Video</strong>.</p>
 <section id="id2">
 <h3>Getting Started<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
-<p>Navigate to the <strong>Stratus</strong> tab in the 3D viewport. In <strong>Render Settings</strong> under <strong>Render</strong>, click <strong>Render Animation</strong>.</p>
+<p>Navigate to the <strong>Stratus</strong> tab in the 3D viewport. In <strong>Rendering</strong> under <strong>Render</strong>, click <strong>Render Animation</strong>.</p>
 <p><img alt="alt text" src="_images/render.png" /></p>
 <p>The time taken to render each frame will be in the Blender info window/console.</p>
 <div class="admonition warning">
@@ -152,8 +170,8 @@
 <h3>Environment Image Strength<a class="headerlink" href="#environment-image-strength" title="Permalink to this headline"></a></h3>
 <p>The strength of background node in the world shader. The purpose of this is to ensure consistency between the Blender render engine and the viewport editor.</p>
 </section>
-<section id="environment-texture-size">
-<h3>Environment Texture Size<a class="headerlink" href="#environment-texture-size" title="Permalink to this headline"></a></h3>
+<section id="id3">
+<h3>Environment Texture Size<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
 <p>Determines the resolution of the HDRI image. The option will be a multiple of <strong>1024 x 512</strong> pixels. i.e.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(1024 x 512) * size
 </pre></div>

@@ -1,5 +1,9 @@
 # Help
 
+```{note}
+This page is under construction.
+```
+
 ## Issues
 
 ### Crashing

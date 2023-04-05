@@ -1,5 +1,13 @@
 # Clouds
 
+```{note}
+This page is under construction.
+```
+
+```{note}
+Video tutorial coming very soon! 
+```
+
 ## Basic
 
 ### Rotation
