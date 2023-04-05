@@ -4,7 +4,7 @@
 % contain the root `toctree` directive.
 
 # Stratus Documentation
-![alt text](../candy.png)
+![alt text](../stratus_splash.png)
 
 ```{toctree}
 :caption: 'Contents:'

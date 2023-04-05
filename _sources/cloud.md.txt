@@ -12,6 +12,9 @@ Cloud layer density.
 
 ![alt text](../gifs/cloud/cld_density.gif)
 
+### Density Height
+Cloud layer density height.
+
 ### Size
 Cloud layer size.
 
@@ -43,6 +46,8 @@ The effect the atmosphere has on the appearance of the clouds as viewed from a d
 The intensity of ambient light coming from the atmosphere.
 
 ![alt text](../gifs/cloud/cld_ambient_int.gif)
+
+### Attenuation
 
 ## Noise
 
